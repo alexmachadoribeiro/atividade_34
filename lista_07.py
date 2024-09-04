@@ -22,5 +22,6 @@ while True:
 
 nomes.sort()
 
+print(f'Número de nomes na lista: {len(nomes)}.')
 for nome in nomes:
     print(nome)
