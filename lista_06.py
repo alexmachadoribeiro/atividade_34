@@ -1,11 +1,12 @@
 '''
 Crie um programa que possua uma lista com números de 1 a 20, e informe quais deles são primos.
 '''
+import math
 
 def primo(numero):
     if numero < 2:
         return False
-    for i in range(2, int(numero ** 0.5) + 1):
+    for i in range(2, int(math.sqrt(numero)) + 1):
         if numero % i == 0:
             return False
     return True
