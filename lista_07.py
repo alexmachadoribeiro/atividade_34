@@ -1,3 +1,7 @@
+'''
+Crie um programa onde o usuário possa digitar uma lista de nomes (quantos ele quiser) e no final exiba a lista de nomes em ordem alfabética na tela, mostrando também o número de nomes digitado pelo usuário.
+'''
+
 import os
 
 nomes = []
@@ -15,7 +19,7 @@ while True:
             continue
     else:
         break
-    
+
 nomes.sort()
 
 for nome in nomes:
