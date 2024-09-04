@@ -1,3 +1,4 @@
+import os
 from datetime import date
 
 eventos = []
@@ -8,6 +9,7 @@ ano = date.today().year
 
 while True:
     opcao = input('1 para cadastrar evento ou 2 para se inscrever: ')
+    os.system('cls')
     match opcao:
         case '1':
             evento = {}
