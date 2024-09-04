@@ -18,8 +18,20 @@ while True:
             nome = input('Informe o seu nome: ')
             idade = int(input('Informe sua idade: '))
             while True:
-                for evento in eventos:
-                    for campo in evento:
-                        print(f'{campo.capitalize()}: {evento.get(campo)}.')
+                print(f'\n{'-'*30} EVENTOS {'-'*30}\n')
+                for i in range(len(eventos)):
+                    print(f'Código do evento: {i}')
+                    for campo in eventos[i]:
+                        print(f'{campo.capitalize()}: {eventos[i].get(campo)}.')
                     print('-'*30)
+                try:
+                    codigo_evento = int(input('Informe o código do evento: '))
+                except Exception as e:
+                    print(f'Não foi possível se inscrever para o evento. {e}.')
+                finally:
+                    break
+            continue
+        case _:
+            print(f'Opção inválida.')
+            break
             # TODO
